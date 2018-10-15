@@ -14,6 +14,7 @@
 		92F2F627217498E200FDF80F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F2F625217498E200FDF80F /* LaunchScreen.storyboard */; };
 		92F2F62A217498E200FDF80F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F2F629217498E200FDF80F /* main.m */; };
 		92F2F634217498E200FDF80F /* XYUIControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F2F633217498E200FDF80F /* XYUIControlTests.m */; };
+		92F2F642217499D300FDF80F /* XYPickTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F2F640217499D300FDF80F /* XYPickTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		92F2F62F217498E200FDF80F /* XYUIControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYUIControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F2F633217498E200FDF80F /* XYUIControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYUIControlTests.m; sourceTree = "<group>"; };
 		92F2F635217498E200FDF80F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F2F640217499D300FDF80F /* XYPickTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPickTextField.m; sourceTree = "<group>"; };
+		92F2F641217499D300FDF80F /* XYPickTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPickTextField.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,15 +84,13 @@
 		92F2F619217498E000FDF80F /* XYUIControl */ = {
 			isa = PBXGroup;
 			children = (
-				92F2F61A217498E000FDF80F /* AppDelegate.h */,
-				92F2F61B217498E000FDF80F /* AppDelegate.m */,
+				92F2F63F2174999E00FDF80F /* XYPickTextField */,
+				92F2F63E217498FD00FDF80F /* AppEntry */,
 				92F2F61D217498E000FDF80F /* ViewController.h */,
 				92F2F61E217498E000FDF80F /* ViewController.m */,
 				92F2F620217498E000FDF80F /* Main.storyboard */,
 				92F2F623217498E200FDF80F /* Assets.xcassets */,
 				92F2F625217498E200FDF80F /* LaunchScreen.storyboard */,
-				92F2F628217498E200FDF80F /* Info.plist */,
-				92F2F629217498E200FDF80F /* main.m */,
 			);
 			path = XYUIControl;
 			sourceTree = "<group>";
@@ -101,6 +102,34 @@
 				92F2F635217498E200FDF80F /* Info.plist */,
 			);
 			path = XYUIControlTests;
+			sourceTree = "<group>";
+		};
+		92F2F63E217498FD00FDF80F /* AppEntry */ = {
+			isa = PBXGroup;
+			children = (
+				92F2F61A217498E000FDF80F /* AppDelegate.h */,
+				92F2F61B217498E000FDF80F /* AppDelegate.m */,
+				92F2F628217498E200FDF80F /* Info.plist */,
+				92F2F629217498E200FDF80F /* main.m */,
+			);
+			path = AppEntry;
+			sourceTree = "<group>";
+		};
+		92F2F63F2174999E00FDF80F /* XYPickTextField */ = {
+			isa = PBXGroup;
+			children = (
+				92F2F643217499E000FDF80F /* View */,
+			);
+			path = XYPickTextField;
+			sourceTree = "<group>";
+		};
+		92F2F643217499E000FDF80F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92F2F641217499D300FDF80F /* XYPickTextField.h */,
+				92F2F640217499D300FDF80F /* XYPickTextField.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F2F61F217498E000FDF80F /* ViewController.m in Sources */,
+				92F2F642217499D300FDF80F /* XYPickTextField.m in Sources */,
 				92F2F62A217498E200FDF80F /* main.m in Sources */,
 				92F2F61C217498E000FDF80F /* AppDelegate.m in Sources */,
 			);
@@ -298,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -351,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
