@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922A776221770C9100D21228 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 922A776121770C9100D21228 /* UIButton+ImageTitleSpacing.m */; };
 		92F2F61C217498E000FDF80F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F2F61B217498E000FDF80F /* AppDelegate.m */; };
 		92F2F61F217498E000FDF80F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F2F61E217498E000FDF80F /* ViewController.m */; };
 		92F2F622217498E000FDF80F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F2F620217498E000FDF80F /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		922A776021770C9100D21228 /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
+		922A776121770C9100D21228 /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
 		92F2F617217498E000FDF80F /* XYUIControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYUIControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F2F61A217498E000FDF80F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		92F2F61B217498E000FDF80F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		922A775C217706BD00D21228 /* XYLayoutButton */ = {
+			isa = PBXGroup;
+			children = (
+				922A776021770C9100D21228 /* UIButton+ImageTitleSpacing.h */,
+				922A776121770C9100D21228 /* UIButton+ImageTitleSpacing.m */,
+			);
+			path = XYLayoutButton;
+			sourceTree = "<group>";
+		};
 		92F2F60E217498E000FDF80F = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +96,9 @@
 		92F2F619217498E000FDF80F /* XYUIControl */ = {
 			isa = PBXGroup;
 			children = (
+				922A775C217706BD00D21228 /* XYLayoutButton */,
 				92F2F63F2174999E00FDF80F /* XYPickTextField */,
 				92F2F63E217498FD00FDF80F /* AppEntry */,
-				92F2F61D217498E000FDF80F /* ViewController.h */,
-				92F2F61E217498E000FDF80F /* ViewController.m */,
 				92F2F620217498E000FDF80F /* Main.storyboard */,
 				92F2F623217498E200FDF80F /* Assets.xcassets */,
 				92F2F625217498E200FDF80F /* LaunchScreen.storyboard */,
@@ -107,6 +118,8 @@
 		92F2F63E217498FD00FDF80F /* AppEntry */ = {
 			isa = PBXGroup;
 			children = (
+				92F2F61D217498E000FDF80F /* ViewController.h */,
+				92F2F61E217498E000FDF80F /* ViewController.m */,
 				92F2F61A217498E000FDF80F /* AppDelegate.h */,
 				92F2F61B217498E000FDF80F /* AppDelegate.m */,
 				92F2F628217498E200FDF80F /* Info.plist */,
@@ -235,6 +248,7 @@
 				92F2F61F217498E000FDF80F /* ViewController.m in Sources */,
 				92F2F642217499D300FDF80F /* XYPickTextField.m in Sources */,
 				92F2F62A217498E200FDF80F /* main.m in Sources */,
+				922A776221770C9100D21228 /* UIButton+ImageTitleSpacing.m in Sources */,
 				92F2F61C217498E000FDF80F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
